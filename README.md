@@ -11,6 +11,7 @@
 
 ### JS
     - Objeto JS (não POO)
+    - POO
     - Array
     - eventos
     - Manipulação do DOM
