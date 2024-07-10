@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li[name] li[capital="sim"] {
+            color: greenyellow;
+        }
+
+        li[name] li[name^="sao"] {
+            color: orange;
+        }
+
+        li[name] li[name="sao paulo"] {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li name="brasil">
+            <h5>brasil</h5>
+            <ul>
+                <li capital="sim" name="brasilia">brasilia</li>
+                <li capital="sim" name="curitiba">curitiba</li>
+                <li capital="nao" name="sao caetano">sao caetano</li>
+                <li capital="sim" name="sao paulo">sao paulo</li>
+                <li capital="nao" name="sao paulo 2">sao paulo 2</li>
+            </ul>
+        </li>
+        <li name="eua">
+            <h5>eua</h5>
+            <ul>
+                <li capital="sim" name="dc">DC</li>
+                <li capital="nao" name="ny">ny</li>
+                <li capital="nao" name="la">la</li>
+                <li capital="nao" name="sao sei la dos eua">sao sei la dos eua</li>
+            </ul>
+        </li>
+        <li name="portugal">
+            <h5>portugal</h5>
+            <ul>
+                <li capital="sim" name="lisboa">lisboa</li>
+                <li capital="nao" name="porto">porto</li>
+                <li capital="nao" name="cidadex">cidadex</li>
+                <li capital="nao" name="sao sei la dos portugal">sao sei la dos portugal</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

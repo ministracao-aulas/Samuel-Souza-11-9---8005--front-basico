@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let pessoa = {
+  nome: 'Tiago',
+  sobrenome: 'Fernandes',
+  idade: 60,
+  peso: 120,
+  altura: 1.82,
+  get nome_completo() { // atributo dinâmico
+    return `${this.nome} ${this.sobrenome}`;
+  }
+};
+
+// console.log('Nome: %s, Idade: %s', pessoa.nome, pessoa.idade);
+
+// console.log(`Nome: ${pessoa.nome}, Idade: ${pessoa.idade}`);
+
+// console.log(`Nome: ${pessoa.nome}, E-mail: ${pessoa.email}`);
+
+// pessoa['email'] = 'tiago@mail.com';
+
+// console.log(`Nome: ${pessoa.nome}, E-mail: ${pessoa.email}`);
+
+// console.log(`Nome Completo: ${pessoa.nome} ${pessoa.sobrenome}`);
+
+// pessoa['nome_completo'] = `${pessoa.nome} ${pessoa.sobrenome}`; // valor estático
+
+console.log(`Nome Completo: ${pessoa.nome_completo} | sn: ${pessoa.sobrenome}`);
+
+pessoa['sobrenome'] = 'França';
+
+console.log(`Nome Completo: ${pessoa.nome_completo} | sn: ${pessoa.sobrenome}`);
+</script>
+</body>
+</html>
